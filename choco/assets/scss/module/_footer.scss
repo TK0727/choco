@@ -1,0 +1,23 @@
+footer{
+    height: 250px;
+    @include padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/bg/footer-bg.jpg);
+
+    @include supports(background-image, url(../image/bg/footer-bg.webp));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include sp($break2){
+        height: 150px;
+    }
+    small {
+        @include Cormorant-Garamond-r;
+        @include sp($break2){
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+.home-fv{
+    padding-top: 170px;
+    padding-bottom: 70px;
+    @include padding;
+    background-image: url(../image/bg/bg.png);
+    @include supports(background-image, url(../image/bg/bg.webp));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    z-index: 2;
+    @include sp($break2){
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+.container{
+    @include container;
+    width: 100%;
+    height: 675px;
+    position: relative;
+    @include padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mv{
+       position: absolute;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       
+    img{
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+     }
+    }
+    .cp{
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        font-size: 60px;
+        @include Cormorant-Garamond-r;
+
+        @include sp($break2){
+        font-size: 8vw;
+            
+        }
+    }
+    .deco{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 25%;
+        min-width: 220px;
+
+        @include sp($break2){
+            min-width: 170px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
+}
+    .home-main{
+        padding-top: 300px;
+        padding-bottom: 300px;
+        @include padding;
+        background-image: url(../image/bg/bg-home.jpg);
+        @include supports(background-image, url(../image/bg/bg-home.webp));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-top: -200px;
+        position: relative;
+        z-index: 1;
+
+        @include sp($break2){
+            padding-top: 320px;
+            padding-bottom: 230px;
+        }
+    
+    .container{
+        @include container(1000px);
+    
+    .cacao{
+        .ttl{
+          text-align: center;
+          font-size: 60px;
+          @include Cormorant-Garamond-r;
+        
+        
+
+        @include sp($break2){
+            font-size: 40px;
+        }
+    }
+
+    .contents{
+        margin-top: 70px;
+        display: flex;
+        gap: 5%;
+
+        @include sp($break2){
+            margin-top: 80px;
+        }
+        @include sp($article_break){
+            display: block;
+        }
+
+        .img{
+            flex: 1;
+
+            @include sp($article_break){
+                display: initial;
+                @include container(270px);
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+
+        
+        .txt{
+            flex: 1;
+
+            @include sp($article_break){
+                flex: initial;
+                margin-top: 70px;
+            }
+            .msg{
+                @include lineheight(20, 50);
+            }
+        }
+
+    }
+    }
+
+    .taste{
+        margin-top: 200px;
+        
+        img{
+            @include container(470px);
+            @include sp($article_break){
+                @include container(350px);
+            }
+
+        }
+        .contents{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 120px;
+            gap: 5%;
+
+            @include sp($break2){
+                margin-top: 80px;
+            }
+            @include sp($article_break){
+                display: block;
+            }
+
+            .head{
+                flex: 1;
+
+                @include sp($article_break){
+                    flex: initial;
+                }
+
+                .ttl{
+                    text-align: right;
+                    font-size: 60px;
+                    @include Cormorant-Garamond-r;
+
+                    @include sp($article_break){
+                        text-align: center;
+                    }
+        
+
+                    @include sp($break2){
+                    font-size: 40px;
+              }
+            }
+           }
+
+           .txt{
+            flex: 1;
+            @include sp($article_break){
+                flex: initial;
+                margin-top: 60px;
+            }
+            .msg{
+                @include lineheight(20, 50);
+            }
+           }
+          }
+        }
+    }
+}

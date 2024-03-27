@@ -1,0 +1,31 @@
+header{
+    height: 170px;
+    @include padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include sp($break2){
+        height: 120px;
+    }
+
+    .logo{
+        .link{
+            display: block;
+            height: 100px;
+            @include sp($break2){
+                height: 80px;
+            }
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+
